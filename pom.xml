@@ -48,7 +48,7 @@
         <dependency>
                 <groupId>org.eurekaclinical</groupId>
                 <artifactId>eurekaclinical-common</artifactId>
-                <version>1.0-Alpha-7</version>
+                <version>1.0-Alpha-16</version>
         </dependency>  
     </dependencies>                                                           
 </project>
