@@ -37,10 +37,10 @@ import org.eurekaclinical.user.client.comm.UserRequest;
  * 
  * @author miaoai
  */
-public class EurekaclinicalUserClient extends EurekaClinicalClient {
+public class EurekaClinicalUserClient extends EurekaClinicalClient {
 
 	private static final Logger LOGGER
-			= LoggerFactory.getLogger(EurekaclinicalUserClient.class);
+			= LoggerFactory.getLogger(EurekaClinicalUserClient.class);
         
 	private static final GenericType<List<User>> UserList = new GenericType<List<User>>() {
 	};
@@ -49,7 +49,7 @@ public class EurekaclinicalUserClient extends EurekaClinicalClient {
        
 	private final String userServiceUrl;
 
-	public EurekaclinicalUserClient(String inUserServiceUrl) {
+	public EurekaClinicalUserClient(String inUserServiceUrl) {
 		super(null);
 		LOGGER.debug("Using eurekaclinical user service URL {}", inUserServiceUrl);
 		this.userServiceUrl = inUserServiceUrl;
