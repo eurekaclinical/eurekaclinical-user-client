@@ -17,15 +17,15 @@
     </parent>
         
     <scm>
-        <connection>scm:git:https://github.com/eurekaclinical/user-client.git</connection>
-        <developerConnection>scm:git:https://github.com/eurekaclinical/user-client.git</developerConnection>
-        <url>https://github.com/eurekaclinical/user-client.git</url>
+        <connection>scm:git:https://github.com/eurekaclinical/eurekaclinical-user-client.git</connection>
+        <developerConnection>scm:git:https://github.com/eurekaclinical/eurekaclinical-user-client.git</developerConnection>
+        <url>https://github.com/eurekaclinical/eurekaclinical-user-client.git</url>
         <tag>HEAD</tag>
     </scm>  
             
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/eurekaclinical/user-service/issues</url>
+        <url>https://github.com/eurekaclinical/eurekaclinical-user-client/issues</url>
     </issueManagement>
     
     <build>
