@@ -60,16 +60,19 @@ public class EurekaClinicalUserProxyClient extends AuthorizingEurekaClinicalProx
         return this.userServiceUrl;
     }
 
+    @Override
     public List<User> getUsers() throws ClientException {
         final String path = "/api/protected/users";
         return doGet(path, UserList);
     }
 
+    @Override
     public User getMe() throws ClientException {
         String path = "/api/protected/users/me";
         return doGet(path, User.class);
     }
 
+    @Override
     public User getUserById(Long inUserId) throws ClientException {
         final String path = "/api/protected/users/" + inUserId;
         return doGet(path, User.class);
