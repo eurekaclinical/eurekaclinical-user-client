@@ -12,6 +12,14 @@ The library provides two REST API clients for managing user profile information 
 * EurekaClinicalUserClient.java: for web clients to manage user profile information via the eurekaclinical-user-webapp proxy.
 * EurekaClinicalUserProxyClient.java: for Java applications to manage user profile information directly using eurekaclinical-user-service.
 
+## Build requirements
+* [Oracle Java JDK 8](http://www.oracle.com/technetwork/java/javase/overview/index.html)
+* [Maven 3.2.5 or greater](https://maven.apache.org)
+
+## Runtime requirements
+* [Oracle Java JRE 8](http://www.oracle.com/technetwork/java/javase/overview/index.html)
+* [Tomcat 7](https://tomcat.apache.org)
+
 ## Building it
 The project uses the maven build tool. Typically, you build it by invoking `mvn clean install` at the command line. For simple file changes, not additions or deletions, you can usually use `mvn install`. See https://github.com/eurekaclinical/dev-wiki/wiki/Building-Eureka!-Clinical-projects for more details.
 
