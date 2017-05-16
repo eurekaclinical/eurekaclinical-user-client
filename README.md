@@ -1,5 +1,5 @@
 # Eureka! Clinical User Client
-Atlanta Clinical and Translational Science Institute (ACTSI), Emory University, Atlanta, GA
+[Atlanta Clinical and Translational Science Institute (ACTSI)](http://www.actsi.org), [Emory University](http://www.emory.edu), Atlanta, GA
 
 ## What does it do?
 It is a library for accessing eurekaclinical-user-service RESTful APIs from Java applications. It provides two REST API clients for managing user profile information for deployments of Eureka! Clinical that use its built-in authentication and user profile microservices:
