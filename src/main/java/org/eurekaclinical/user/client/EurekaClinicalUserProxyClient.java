@@ -20,9 +20,9 @@
 package org.eurekaclinical.user.client;
 
 import com.sun.jersey.api.client.GenericType;
+import java.net.URI;
 import java.util.List;
 import javax.ws.rs.core.UriBuilder;
-import org.eurekaclinical.common.comm.Role;
 import org.eurekaclinical.common.comm.clients.AuthorizingEurekaClinicalProxyClient;
 import org.eurekaclinical.common.comm.clients.ClientException;
 import org.slf4j.Logger;
@@ -47,16 +47,15 @@ public class EurekaClinicalUserProxyClient extends AuthorizingEurekaClinicalProx
     private static final GenericType<List<User>> UserList = new GenericType<List<User>>() {
     };
 
-    private final String userServiceUrl;
+    private final URI userServiceUrl;
 
     public EurekaClinicalUserProxyClient(String inUserServiceUrl) {
         super(null);
-        LOGGER.debug("Using eurekaclinical user service URL {}", inUserServiceUrl);
-        this.userServiceUrl = inUserServiceUrl;
+        this.userServiceUrl = URI.create(inUserServiceUrl);
     }
 
     @Override
-    protected String getResourceUrl() {
+    protected URI getResourceUrl() {
         return this.userServiceUrl;
     }
 
