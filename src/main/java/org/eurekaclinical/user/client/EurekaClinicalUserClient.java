@@ -51,7 +51,6 @@ public class EurekaClinicalUserClient extends AuthorizingEurekaClinicalClient {
 
     public EurekaClinicalUserClient(String inUserServiceUrl) {
         super(null);
-        LOGGER.debug("Using eurekaclinical user service URL {}", inUserServiceUrl);
         this.userServiceUrl = URI.create(inUserServiceUrl);
     }
 
@@ -62,24 +61,24 @@ public class EurekaClinicalUserClient extends AuthorizingEurekaClinicalClient {
 
     @Override
     public List<User> getUsers() throws ClientException {
-        final String path = "/proxy-resource/users";
+        final String path = "/api/protected/users";
         return doGet(path, UserList);
     }
 
     @Override
     public User getMe() throws ClientException {
-        String path = "/proxy-resource/users/me";
+        String path = "/api/protected/users/me";
         return doGet(path, User.class);
     }
 
     @Override
     public User getUserById(Long inUserId) throws ClientException {
-        final String path = "/proxy-resource/users/" + inUserId;
+        final String path = "/api/protected/users/" + inUserId;
         return doGet(path, User.class);
     }
 
     public void changePassword(String inOldPass, String inNewPass) throws ClientException {
-        final String path = "/proxy-resource/users/passwordchange";
+        final String path = "/api/protected/users/passwordchange";
         PasswordChangeRequest passwordChangeRequest
                 = new PasswordChangeRequest();
         passwordChangeRequest.setOldPassword(inOldPass);
@@ -88,7 +87,7 @@ public class EurekaClinicalUserClient extends AuthorizingEurekaClinicalClient {
     }
 
     public void updateUser(User inUser, Long userId) throws ClientException {
-        final String path = "/proxy-resource/users/" + userId;
+        final String path = "/api/protected/users/" + userId;
         doPut(path, inUser);
     }
 
@@ -103,12 +102,12 @@ public class EurekaClinicalUserClient extends AuthorizingEurekaClinicalClient {
     }
 
     public OAuthProvider getOAuthProvider(Long inId) throws ClientException {
-        final String path = "/proxy-resource/oauthproviders/" + inId;
+        final String path = "/api/protected/oauthproviders/" + inId;
         return doGet(path, OAuthProvider.class);
     }
 
     public OAuthProvider getOAuthProviderByName(String inName) throws ClientException {
-        final String path = UriBuilder.fromPath("/proxy-resource/oauthproviders/byname/")
+        final String path = UriBuilder.fromPath("/api/protected/oauthproviders/byname/")
                 .segment(inName)
                 .build().toString();
         return doGet(path, OAuthProvider.class);
