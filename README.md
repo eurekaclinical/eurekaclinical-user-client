@@ -6,11 +6,13 @@ It is a library for accessing eurekaclinical-user-service RESTful APIs from Java
 * EurekaClinicalUserClient.java: for web clients to manage user profile information via the eurekaclinical-user-webapp proxy.
 * EurekaClinicalUserProxyClient.java: for Java applications to manage user profile information directly using eurekaclinical-user-service.
 
-## Version 1.0 development series
 Latest release: [![Latest release](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/eurekaclinical-user-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/eurekaclinical-user-client)
 
-## Version history
-No final releases yet
+## Version 1.1
+Dependency updates.
+
+## Version 1.0
+Initial release.
 
 ## Build requirements
 * [Oracle Java JDK 8](http://www.oracle.com/technetwork/java/javase/overview/index.html)
