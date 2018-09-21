@@ -8,6 +8,9 @@ It is a library for accessing eurekaclinical-user-service RESTful APIs from Java
 
 Latest release: [![Latest release](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/eurekaclinical-user-client/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/eurekaclinical-user-client)
 
+## Version 1.2
+Dependency updates.
+
 ## Version 1.1
 Dependency updates.
 
