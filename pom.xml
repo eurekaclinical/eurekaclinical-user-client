@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.eurekaclinical</groupId>
     <artifactId>eurekaclinical-user-client</artifactId>
-    <version>1.5-SNAPSHOT</version>
+    <version>1.6-SNAPSHOT</version>
     <name>Eureka! Clinical User Client</name>
     <description>Eureka! Clinical User Client is a library of shared client obejcts for the
         other modules of the Eureka! Clinical User project.
@@ -47,7 +47,7 @@
         <dependency>
             <groupId>org.eurekaclinical</groupId>
             <artifactId>eurekaclinical-common</artifactId>
-            <version>5.0-Alpha-7-SNAPSHOT</version>
+            <version>5.1-Alpha-1-SNAPSHOT</version>
         </dependency>  
     </dependencies>                                                           
 </project>
